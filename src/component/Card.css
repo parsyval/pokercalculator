@@ -1,0 +1,12 @@
+.card {
+  float: left;
+  padding: 0;
+  text-align: center;
+  width: 50%;
+}
+
+.card img {
+  display: block;
+  margin: 0;
+  max-width: 100%;
+}

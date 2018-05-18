@@ -1,0 +1,11 @@
+.deck {
+  border: 1px black solid;
+  margin: 10px;
+  width: 25%;
+}
+
+ul {
+  column-count: 4;
+  padding: 0;
+  list-style-type: none;
+}
