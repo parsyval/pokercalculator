@@ -28,10 +28,7 @@ class Deck extends Component {
   }
 
   selectCard = card => {
-    this.props.onSelectCard({
-      type: SELECT_CARD,
-      payload: card,
-    });
+    this.props.onSelectCard(card);
   };
 
   render() {

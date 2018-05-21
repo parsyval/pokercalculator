@@ -14,7 +14,7 @@ class App extends Component {
           <h1 className="App-title">Poker Calculator</h1>
         </header>
         <Deck onSelectCard={selectCard} />
-        <Card card={selectedCard} />
+        <Card card={this.props.state.selectedCard} />
       </div>
     );
   }

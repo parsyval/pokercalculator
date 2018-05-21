@@ -10,7 +10,7 @@ const reducer = (state = initialState, action) => {
     case SELECT_CARD:
       return { ...state, selectedCard: action.payload };
     default:
-      return state;
+      return {...state};
   }
 };
 
