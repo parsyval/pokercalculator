@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Deck.css';
 import Card from './Card';
+import { SELECT_CARD } from '../store/store-actions';
 
 class Deck extends Component {
   constructor(props) {
@@ -26,12 +27,20 @@ class Deck extends Component {
       });
   }
 
+  selectCard = card => {
+    this.props.onSelectCard(card);
+  };
+
   render() {
     const { deck } = this.state;
     return (
       <div className="deck">
         <ul>
-          {deck.map((card, i) => <li key={i}><Card card={card}/></li>)}
+          {deck.map((card, i) => (
+            <li key={i} onClick={() => this.selectCard(card)}>
+              <Card card={card} />
+            </li>
+          ))}
         </ul>
       </div>
     );
