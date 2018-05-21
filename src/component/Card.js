@@ -10,7 +10,7 @@ class Card extends Component{
     const {card} = this.props;
     return (
       <div className="card">
-        <img src={card.image}/>
+        <img src={card.image} alt={card.code}/>
       </div>
     );
   }

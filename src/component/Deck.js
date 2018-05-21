@@ -31,7 +31,7 @@ class Deck extends Component {
     return (
       <div className="deck">
         <ul>
-          {deck.map((card, i) => <li><Card card={card} key={this.state.deck[i].code} /></li>)}
+          {deck.map((card, i) => <li key={i}><Card card={card}/></li>)}
         </ul>
       </div>
     );
