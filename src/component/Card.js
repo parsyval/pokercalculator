@@ -8,10 +8,12 @@ class Card extends Component{
 
   render(){
     const {card} = this.props;
-    return (
+    return card ? (
       <div className="card">
         <img src={card.image} alt={card.code}/>
       </div>
+    ) : (
+    <div>No card selected</div>
     );
   }
 }
